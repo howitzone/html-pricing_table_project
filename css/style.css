@@ -1,0 +1,133 @@
+body {
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   margin: 0;
+   padding: 0;
+}
+
+.pricing-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   gap: 1rem;
+   background: #536976;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+.pricing-plan {
+   flex: 1;
+   max-width: 300px;
+   height: 50vh;
+   padding: 20px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.basic {
+   background: #CC95C0;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.standard {
+   background: #ADA996;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.premium {
+   background: #fc00ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.plan-title { 
+   font-size: 22px;
+   font-weight: bold;
+   color: #610C9F;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   background-color: #FFF7FC;
+   border-radius: 20px;
+}
+
+span {
+   display: inline-flex;
+   width: 8%;
+   justify-content: center;
+   align-content: space-between;
+   font-size: 1rem;
+   color: darkred;
+}
+
+.plan-price {
+   font-size: 28px;
+   color: #292E49;
+   font-weight: bold;
+   margin: 15px 0;
+}
+
+.plan-features {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.plan-features li {
+   margin-bottom: 15px;
+}
+
+.plan-button {
+   margin-top: 20px;
+   padding: 4% 20%;
+   color: #fff;
+   font-weight: bold;
+   cursor: pointer;
+   background-color: #E72929;
+   text-transform: uppercase;
+   border-radius: 10px;
+   border: none;
+}
+
+.plan-button:hover {
+   color: #1C1678;
+   background-color: #4CCD99;
+}
+ /* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px) {
+   .pricing-container {
+      flex-direction: column;
+      height: 100%;
+      gap: .05rem;
+   }
+   
+   .pricing-plan {
+      margin-top: 1rem;
+      width: 250px;
+   }
+   
+   .plan-title { 
+      font-size: 16px;
+   }
+   
+   .plan-price {
+      font-size: 22px;
+      margin: 5px 0;
+   }
+   
+   .plan-features li {
+      margin-bottom: 10px;
+   }
+   
+   .plan-button {
+      margin-top: 5px;
+      padding: 4% 15%;
+   }
+   
+   .premium {
+      margin-bottom: 1rem;
+   }
+}
